@@ -1,0 +1,77 @@
+#include<iostream>
+
+using namespace std;
+
+int main(void)
+{
+    float Pertambahan;
+    float Pengurangan;
+    float Perkalian;
+    float Pembagian;
+    float menu;    
+    int angka1;
+    int angka2;
+    int hasil;
+    
+    cout <<"---------------------------- \n";
+    cout <<"---------------------------- \n";
+    cout <<"your simple calculator\n";    
+    cout <<"---------------------------- \n";
+    cout <<"---------------------------- \n";
+    
+
+    cout <<"1. Pertambahan \n";
+    cout <<"2. Pengurangan \n";
+    cout <<"3. Perkalian \n";
+    cout <<"4. Pembagian \n \n";
+    cout <<"Silahkan Pilih = ";
+    cout <<"";
+    cin >> menu;
+    
+    if(menu==1){
+        cout <<"Masukkan Angka Pertama : ";
+        cin >>angka1;
+        cout <<"Masukkan Angka Kedua : ";
+        cin >>angka2;
+        
+        hasil = angka1 + angka2;
+        
+        cout <<"hasil adalah " << hasil;
+    }
+    else if(menu==2){
+        cout <<"Masukkan Angka Pertama : ";
+        cin >>angka1;
+        cout <<"Masukkan Angka Kedua : ";
+        cin >>angka2;
+        
+        hasil = angka1 - angka2;
+        
+        cout <<"hasil adalah " << hasil;
+    }
+    else if(menu==3){
+        cout <<"Masukkan Angka Pertama : ";
+        cin >>angka1;
+        cout <<"Masukkan Angka Kedua : ";
+        cin >>angka2;
+        
+        hasil = angka1 * angka2;
+        
+        cout <<"hasil adalah " << hasil;
+    }
+    else if(menu==4){
+        cout <<"Masukkan Angka Pertama : ";
+        cin >>angka1;
+        cout <<"Masukkan Angka Kedua : ";
+        cin >>angka2;
+        
+        hasil = angka1 / angka2;
+        
+        cout <<"hasil adalah " << hasil;
+    }
+    
+    else if(menu>5){
+        cout <<"try again";
+    }
+
+    return 0;
+}
